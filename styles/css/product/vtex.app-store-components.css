@@ -1,0 +1,40 @@
+.listItemContent {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.paragraph {
+  letter-spacing: -0.013rem;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.wrapper--appTerms {
+  overflow-wrap: anywhere;
+}
+.paragraph--appTerms {
+  font-size: 0.875rem;
+}
+
+.heading--appTerms {
+  font-size: 1.25rem;
+}
+
+@media(min-width: 40rem) {
+  .wrapper--appTerms {
+    overflow-wrap: anywhere;
+  } 
+}
+
+.appImage--screenshots {
+  max-height: 380px;
+  object-fit: contain;
+}
+
+.sliderLayoutContainer--screenshots {
+  background-color: #f3f4f5;
+}

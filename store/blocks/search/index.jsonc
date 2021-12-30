@@ -1,0 +1,16 @@
+{
+  "store.search": {
+    "blocks": [
+      "flex-layout.row#search-bar",
+      "search-result-layout"
+    ],
+    "props": { 
+      "context": { 
+        "maxItemsPerPage": 50,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "__unstableProductOriginVtex": true
+      }
+    }
+  }
+}

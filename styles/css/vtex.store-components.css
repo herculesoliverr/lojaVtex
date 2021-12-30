@@ -1,0 +1,30 @@
+.searchBarContainer {
+  max-width: unset;
+  height: 80px;
+  padding-top: 0.5rem;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input),
+.searchBarContainer :global(.vtex-input__prefix) {
+  background-color: white;
+}
+
+.imageElement--earnMoney {
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .imageElement--earnMoney {
+    object-fit: cover;
+  }
+  .imageElement--earnMoney {
+    width: 100% !important;
+  } 
+}
+
+@media (min-width: 80rem) {
+  .imageElement--earnMoney {
+    width: auto !important;
+  } 
+}

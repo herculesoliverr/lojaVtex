@@ -1,0 +1,26 @@
+{
+  "flex-layout.col#appFeatures": {
+    "props": {
+      "blockClass": "appSpecificationContainer",
+      "rowGap": 5,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#appFeaturesHeader",
+      "specification-list#features"
+    ]
+  },
+  "rich-text#appFeaturesHeader": {
+    "props": {
+      "blockClass": "specificationName",
+      "htmlId": "features",
+      "text": "**Features**"
+    }
+  },
+  "specification-list#features": {
+    "props": {
+      "groupName": "App Data",
+      "specificationName": "features"
+    }
+  }
+}

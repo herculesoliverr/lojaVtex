@@ -1,0 +1,29 @@
+{
+  "store.custom#all-apps": {
+    "path": "/all-apps",
+    "props": {
+      "title": "All Apps - VTEX App Store",
+      "isSitemapEntry": true
+    }
+  },
+  "store.custom#order-form-loading": {
+    "path": "/order-form-loading",
+    "props": {
+      "title": "Order Form Loading - VTEX App Store"
+    }
+  },
+  "store.custom#apps": {
+    "path": "/apps",
+    "props": {
+      "title": "Apps - VTEX App Store",
+      "isSitemapEntry": true
+    }
+  },
+  "store.custom#authenticate": {
+    "path": "/authenticate",
+    "props": {
+      "title": "Authenticate - VTEX App Store",
+      "isSitemapEntry": false
+    }
+  }
+}

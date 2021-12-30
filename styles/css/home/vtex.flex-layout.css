@@ -1,0 +1,265 @@
+.flexRow--header {
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  background-color: #25354D;
+  padding-top: 5px;
+}
+
+.flexRow--transparent {
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  padding-top: 5px;
+}
+
+.flexColChild--testimonyTextCol {
+  width: 100%;
+}
+
+.flexRow--mainContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.flexRow--infocardHome {
+  background: white;
+  margin: 0 auto 0 auto;
+  max-width: 96rem;
+}
+
+.flexColChild--bottomCardsCol {
+  padding-bottom: 0;
+}
+
+.flexCol--testimonyTextCol {
+  max-width: 25rem;
+}
+
+.flexColChild--headlinecover {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.flexRow--infocardHomeMobile {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.flexRow--headline {
+  height: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCol--categoryCard {
+  
+  border-radius: 0.5rem;
+  height: 8rem;
+}
+
+.flexColChild--categoryCard {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flexCol--textAlignLeft {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.flexColChild--textAlignLeft {
+  padding-bottom: 0;
+}
+
+.flexCol--card1Color {
+  background: #25354D;
+}
+
+.flexCol--card2Color {
+  background: #134CD8;
+}
+
+.flexCol--card3Color {
+  background: #3D5980;
+}
+
+.flexCol--card4Color {
+  background: #DD1659;
+}
+
+.flexCol--bottomCardsCol {
+  padding-bottom: 1.5rem;
+}
+
+
+.flexRow--testimonyContainer {
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flexRowContent--testimonyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRow--homeShelf {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flexRow--categoriesTitle {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.flexCol--imageContainer {
+  justify-content: flex-start;
+}
+
+.flexCol--bannerHome {
+  padding-right: 2rem;
+}
+.flexCol--bottomCards {
+  background-color: #FFF;
+}
+
+.flexColChild--bottomCards{
+  padding-bottom: 0;
+}
+
+.flexCol--lastBottomCard {
+  background-color: #142032;
+}
+.flexColChild--lastBottomCard {
+  padding-bottom: 0;
+}
+
+.flexRow--bottomCardMobileContainer {
+  background-color:rgb(255,191,221);
+}
+.flexRow--bottomCardMobile3Container {
+  background-color: #142032;
+}
+
+.flexRowContent--bottomCardMobileContainer {
+  justify-content: space-between;
+}
+.flexRowContent--bottomCardMobile3Container {
+  justify-content: space-between;
+}
+
+.flexRowContent--firstBottomCardsTablet {
+  height: 100%;
+}
+
+
+
+/**
+  Tablet
+*/
+
+@media (min-width: 40rem) {
+  .flexColChild--bottomCards{
+    height: 100% !important;
+  }
+
+  .flexRow--testimonyContainer {
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-width: 46rem;
+    padding: 3rem;
+    height: 100%;
+  }
+
+  .flexRow--mainContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .flexColChild--categoryCard {
+    width: 16.625rem;
+  }
+
+  .flexRowContent--categoryRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexColChild--categoryCard {
+    width: 9.625rem;
+  }
+
+}
+
+@media (min-width: 48.1rem) {
+  .flexColChild--categoryCard {
+    width: 13.500rem;
+  }
+}
+
+/**
+  Desktop specifics
+*/
+
+@media (min-width: 80rem) {
+  .flexColChild--bottomCards{
+    height: 310px !important;
+  }
+  
+  .flexRow--testimonyContainer {
+    box-sizing: border-box;
+    border-radius: 8px;
+    max-width: 46rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .flexCol--categoryCard {
+    border-radius: 8px;
+    height: 6.5rem;
+  }
+
+  .flexRow--hMargin {
+    margin: 0 1rem;
+  }
+
+  .flexRowContent--categoryRow {
+    justify-content: space-between;
+  }
+
+  .flexRow--categoryRow {
+    justify-content: space-between;
+  }
+
+  .flexColChild--categoryCard {
+    width: 16.625rem;
+  }
+
+  .flexRow--mainContainer {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    max-width: 90rem;
+  }
+
+  .flexRow--homeShelf {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .flexRow--categoriesTitle {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

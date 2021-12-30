@@ -1,0 +1,67 @@
+{
+  "flex-layout.col#appOverview": {
+    "props": {
+      "blockClass": "appSpecificationContainer",
+      "rowGap": 5,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#appOverviewHeader",
+      "flex-layout.row#appOverviewContent"
+    ]
+  },
+  "rich-text#appOverviewHeader": {
+    "props": {
+      "blockClass": "specificationName",
+      "text": "**Overview**",
+      "htmlId": "overview"
+    }
+  },
+  "flex-layout.row#appOverviewContent": {
+    "props": {
+      "blockClass": "appOverviewContent",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "colGap": 0,
+      "rowGap": 0
+    },
+    "children": [
+      "specification-text#overview",
+      "condition-layout.product#video"
+    ]
+  },
+  "specification-text#overview": {
+    "props": {
+      "groupName": "App Data",
+      "specificationName": "overview"
+    }
+  },
+  "condition-layout.product#video": {
+    "children": [
+      "condition.product#video"
+    ]
+  },
+  "condition.product#video": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "verb": "contains",
+          "object": [
+            "video"
+          ]
+        }
+      ]
+    },
+    "children": [
+      "product-images#overview"
+    ]
+  },
+  "product-images#overview": {
+    "props": {
+      "blockClass": "video",
+      "contentType": "videos",
+      "zoomMode": "disabled"
+    }
+  }
+}

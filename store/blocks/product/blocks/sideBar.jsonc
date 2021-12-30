@@ -1,0 +1,358 @@
+{
+  "flex-layout.col#sideBar": {
+    "props": {
+      "blockClass": "sideBar",
+      "preventVerticalStretch": true,
+      "rowGap": 6
+    },
+    "children": [
+      "product-images#productLogo",
+      "flex-layout.col#partnerContainer",
+      "flex-layout.col#versionContainer",
+      "flex-layout.col#systemCompatibility",
+      "flex-layout.col#developmentEffort",
+      "flex-layout.col#supportContainer"
+    ]
+  },
+  "product-images#productLogo": {
+    "props": {
+      "hiddenImages": [
+        "logoOld",
+        "screenshot"
+      ],
+      "contentType": "images",
+      "blockClass": "productLogo",
+      "zoomMode": "disabled"
+    }
+  },
+  "flex-layout.col#partnerContainer": {
+    "props": {
+      "blockClass": "productHeading",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#partner",
+      "vtex.store-components:product-brand#partnerName"
+    ]
+  },
+  "rich-text#partner": {
+    "props": {
+      "blockClass": "sideBarTitle",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": "**Partner**"
+    }
+  },
+  "vtex.store-components:product-brand#partnerName": {
+    "props": {
+      "blockClass": "partnerName",
+      "displayMode": "text"
+    }
+  },
+  "flex-layout.col#versionContainer": {
+    "props": {
+      "blockClass": "productHeading",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#version",
+      "flex-layout.row#major"
+    ]
+  },
+  "flex-layout.row#major": {
+    "props": {
+      "colGap": 0,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "product-specification-badges#major",
+      "rich-text#dotX"
+    ]
+  },
+  "rich-text#dotX": {
+    "props": {
+      "blockClass": "dotX",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": ".x"
+    }
+  },
+  "rich-text#version": {
+    "props": {
+      "blockClass": "sideBarTitle",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": "**Latest version**"
+    }
+  },
+  "product-specification-badges#major": {
+    "props": {
+      "blockClass": "major",
+      "specificationGroupName": "App Data",
+      "specificationsOptions": [
+        {
+          "displayValue": "SPECIFICATION_VALUE",
+          "specificationName": "Major"
+        }
+      ]
+    }
+  },
+  "flex-layout.col#supportContainer": {
+    "props": {
+      "blockClass": "productHeading",
+      "rowGap": 4,
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "rich-text#support",
+      "flex-layout.col#supportOptions"
+    ]
+  },
+  "rich-text#support": {
+    "props": {
+      "blockClass": "sideBarTitle",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": "**Support**"
+    }
+  },
+  "flex-layout.col#supportOptions": {
+    "props": {
+      "rowGap": 0,
+      "blockClass": "supportOptions"
+    },
+    "children": [
+      "condition-layout.product#faq",
+      "condition-layout.product#documentation",
+      "flex-layout.row#website",
+      "flex-layout.row#getSupport"
+    ]
+  },
+  "condition-layout.product#faq": {
+    "children": [
+      "condition.product#faqURL"
+    ]
+  },
+  "condition.product#faqURL": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "verb": "contains",
+          "object": ["faqURL"]
+        }
+      ]
+    },
+    "children": [
+      "flex-layout.row#faq"
+    ]
+  },
+  "condition-layout.product#documentation": {
+    "children": [
+      "condition.product#documentationURL"
+    ]
+  },
+  "condition.product#documentationURL": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "verb": "contains",
+          "object": ["documentationURL"]
+        }
+      ]
+    },
+    "children": [
+      "flex-layout.row#documentation"
+    ]
+  },
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "supportItem",
+      "colGap": 4,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#faq",
+      "link.product#faq"
+    ]
+  },
+  "image#faq": {
+    "props": {
+      "blockClass": "supportImages",
+      "src": "assets/faq.svg"
+    }
+  },
+  "link.product#faq": {
+    "props": {
+      "blockClass": "supportOption",
+      "href": "{specificationGroups.App Data.specifications.faqURL}",
+      "label": "FAQ"
+    }
+  },
+  "flex-layout.row#documentation": {
+    "props": {
+      "blockClass": "supportItem",
+      "colGap": 4,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#documentation",
+      "link.product#documentation"
+    ]
+  },
+  "image#documentation": {
+    "props": {
+      "src": "assets/documentation.svg"
+    }
+  },
+  "link.product#documentation": {
+    "props": {
+      "blockClass": "supportOption",
+      "href": "{specificationGroups.App Data.specifications.documentationURL}",
+      "label": "Documentation"
+    }
+  },
+  "flex-layout.row#website": {
+    "props": {
+      "blockClass": "supportItem",
+      "colGap": 4,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#website",
+      "link.product#website"
+    ]
+  },
+  "image#website": {
+    "props": {
+      "src": "assets/website.svg"
+    }
+  },
+  "link.product#website": {
+    "props": {
+      "blockClass": "supportOption",
+      "href": "{specificationGroups.App Data.specifications.websiteURL}",
+      "label": "Website"
+    }
+  },
+  "flex-layout.row#getSupport": {
+    "props": {
+      "blockClass": "supportItem",
+      "colGap": 4,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#getSupport",
+      "link.product#getSupport"
+    ]
+  },
+  "image#getSupport": {
+    "props": {
+      "src": "assets/support.svg"
+    }
+  },
+  "link.product#getSupport": {
+    "props": {
+      "blockClass": "supportOption",
+      "href": "{specificationGroups.App Data.specifications.supportURL}",
+      "label": "Get support"
+    }
+  },
+  "flex-layout.row#privacyPolicy": {
+    "props": {
+      "blockClass": "supportItem",
+      "colGap": 4,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#privacyPolicy",
+      "link.product#privacyPolicy"
+    ]
+  },
+  "image#privacyPolicy": {
+    "props": {
+      "src": "assets/policy.svg"
+    }
+  },
+  "link.product#privacyPolicy": {
+    "props": {
+      "blockClass": "supportOption",
+      "href": "{specificationGroups.App Data.specifications.privacyURL}",
+      "label": "Privacy policy"
+    }
+  },
+  "flex-layout.col#systemCompatibility": {
+    "props": {
+      "blockClass": "productHeading",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#compatibility",
+      "product-specification-badges#systemCompatibility"
+    ]
+  },
+  "rich-text#compatibility": {
+    "props": {
+      "blockClass": "sideBarTitle",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": "**Compatibility**"
+    }
+  },
+  "product-specification-badges#systemCompatibility": {
+    "props": {
+      "blockClass": "systemCompatibility",
+      "specificationGroupName": "App Data",
+      "specificationsOptions": [
+        {
+          "displayValue": "SPECIFICATION_VALUE",
+          "specificationName": "requiredTechnologies"
+        }
+      ]
+    }
+  },
+  "flex-layout.col#developmentEffort": {
+    "props": {
+      "blockClass": "productHeading",
+      "rowGap": 1
+    },
+    "children": [
+      "rich-text#developmentEffort",
+      "product-specification-badges#developmentEffort"
+    ]
+  },
+  "rich-text#developmentEffort": {
+    "props": {
+      "blockClass": "sideBarTitle",
+      "font": {
+        "desktop": "body",
+        "mobile": "body"
+      },
+      "text": "**Setup Effort**"
+    }
+  },
+  "product-specification-badges#developmentEffort": {
+    "props": {
+      "blockClass": "developmentEffort",
+      "specificationGroupName": "App Data",
+      "specificationsOptions": [
+        {
+          "displayValue": "SPECIFICATION_VALUE",
+          "specificationName": "selfserviceLevel"
+        }
+      ]
+    }
+  }
+}

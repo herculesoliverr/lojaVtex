@@ -1,0 +1,24 @@
+{
+  "store.not-found#product": {
+    "blocks": [
+      "flex-layout.row#search-bar",
+      "not-found-box"
+    ]
+  },
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+  "flex-layout.col#not-found-page-container": {
+    "props": {
+      "blockClass": "notFoundContainer"
+    },
+    "children": [
+      "flex-layout.row#not-found-container"
+    ]
+  },
+  "flex-layout.row#not-found-container": {
+    "children": [
+      "not-found-box"
+    ]
+  }
+}

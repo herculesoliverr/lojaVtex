@@ -1,0 +1,37 @@
+.storeSelectorContainer {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  margin: 0;
+}
+
+.storeSelectorButtonText {
+  font-size: 1rem;
+  color: white;
+  margin-right: 0;
+}
+
+.storeSelectorButton {
+  font-size: 1rem;
+  color: white;
+}
+
+.loginLabel {
+  padding: 2rem 0;
+  margin: 0;
+  color: white;
+  margin-right: 2rem;
+}
+
+.appStoreDropdownContainer--login {
+  width: auto;
+}
+
+@media (max-width: 66rem) {
+  .loginLabel {
+    padding: 2rem 0;
+    margin: 0;
+    color: white;
+    margin-right: 2rem;
+  }
+}

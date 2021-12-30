@@ -1,0 +1,54 @@
+{
+  "store.home": {
+    "parent": {
+      "header": "header#home"
+    },
+    "blocks": [
+      "stack-layout#cover",
+      "flex-layout.row#search-bar",
+      "flex-layout.row#main-container",
+      "__fold__",
+      "flex-layout.row#main-container-2"
+    ]
+  },
+  "flex-layout.row#main-container": {
+    "props": {
+      "blockClass": "mainContainer"
+    },
+    "children": [
+      "flex-layout.col#main-container"
+    ]
+  },
+  "flex-layout.col#main-container": {
+    "children": [
+      "search-result-layout.customQuery#mostUsed",
+      "search-result-layout.customQuery#highlights",
+      "search-result-layout.customQuery#newApps",
+      "flex-layout.row#categoriesTitle",
+      "responsive-layout.desktop#categories",
+      "responsive-layout.phone#categories",
+      "responsive-layout.tablet#categories",
+      "responsive-layout.desktop#infocard",
+      "responsive-layout.phone#infocard",
+      "responsive-layout.tablet#infocard"
+    ]
+  },
+  "flex-layout.row#main-container-2": {
+    "props": {
+      "blockClass": "mainContainer"
+    },
+    "children": [
+      "flex-layout.col#main-container-2"
+    ]
+  },
+  "flex-layout.col#main-container-2": {
+    "children": [
+      "responsive-layout.desktop#testimonies",
+      "responsive-layout.tablet#testimonies",
+      "responsive-layout.phone#testimonies",
+      "responsive-layout.phone#bottomCards",
+      "responsive-layout.tablet#bottomCards",
+      "responsive-layout.desktop#bottomCards"
+    ]
+  }
+}

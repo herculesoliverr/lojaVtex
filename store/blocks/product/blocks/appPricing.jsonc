@@ -1,0 +1,54 @@
+{
+  "flex-layout.col#appPricing": {
+    "props": {
+      "blockClass": "appSpecificationContainer",
+      "rowGap": 5,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#appPricingHeader",
+      "vtex.app-store-price:product-price",
+      "condition-layout.product#subscriptionMessage"
+    ]
+  },
+  "rich-text#appPricingHeader": {
+    "props": {
+      "blockClass": "specificationName",
+      "htmlId": "pricing",
+      "text": "**Pricing**"
+    }
+  },
+  "condition-layout.product#subscriptionMessage": {
+    "children": [
+      "condition.product#subscriptionMessage"
+    ]
+  },
+  "condition.product#subscriptionMessage": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "verb": "contains",
+          "object": [
+            "externalSubscriptions"
+          ]
+        }
+      ]
+    },
+    "children": [
+      "product-specification-badges#subscriptionMessage"
+    ]
+  },
+  "product-specification-badges#subscriptionMessage": {
+    "props": {
+      "blockClass": "subscriptionMessage",
+      "specificationGroupName": "App Data",
+      "specificationsOptions": [
+        {
+          "displayValue": "SPECIFICATION_VALUE",
+          "specificationName": "externalSubscriptions"
+        }
+      ]
+    }
+  }
+}

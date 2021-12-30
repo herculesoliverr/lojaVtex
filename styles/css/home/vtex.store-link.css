@@ -1,0 +1,47 @@
+.link--card3Link {
+  height: 5.5rem;
+  /* width: 22.1rem; */
+  font-size: 1.5rem;
+  border-color: #142032;
+  background-color: #142032;
+}
+
+.link--rebelPink, .link--rebelPink:focus {
+  background-color: #F71963;
+}
+
+.link--cardButton {
+  height: 4rem;
+  width: 100%;
+  max-width: 16.75rem;
+  border: none;
+}
+
+.link--cardButton:hover {
+  background-color: #e20851;
+}
+
+.link--categoryCard{
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.label--categoryCard {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.2px;
+  margin: 0;
+  max-width: 10rem;
+  display: inline-block;
+}
+
+.link--homeShelf3 {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.link--bottomCardMobileLink {
+  text-decoration: none;
+}

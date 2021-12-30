@@ -1,0 +1,95 @@
+.flexRow--mainContainerMobile {
+  padding-top: 3.125rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 3rem;
+}
+
+.flexRow--mainContainerTablet {
+  padding-top: 3.125rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+
+.flexRow--mainContainer {
+  padding-top: 3.125rem;
+  max-width: 90rem;
+}
+
+.flexCol--topBar {
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #E3E4E6;
+}
+
+.flexCol--pdpContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.flexCol--sideBar {
+  width: 10rem;
+  height: fit-content;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.flexRowContent--contentHeaderPDP {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flexRowContent--brand {
+  width: fit-content;
+}
+
+.flexCol--specifications {
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+.flexRow--supportItem {
+  margin-bottom: 1rem;
+}
+
+.flexCol--appSpecificationContainer {
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 40rem) {
+  .flexRow--mainContainer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .flexCol--specifications {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .flexCol--appSpecificationContainer {
+    padding-top: 3rem;
+  }
+
+  .flexRowContent--brand {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .flexRow--brand {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media(min-width: 80rem) {
+  .flexRow--mainContainer {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+

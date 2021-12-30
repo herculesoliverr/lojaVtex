@@ -1,0 +1,155 @@
+{
+  "responsive-layout.desktop#infocardAllApps": {
+    "children": [
+      "flex-layout.row#infocard-desktopAllApps"
+    ]
+  },
+  "responsive-layout.tablet#infocardAllApps": {
+    "children": [
+      "flex-layout.row#infocard-desktopAllApps"
+    ]
+  },
+  "responsive-layout.phone#infocardAllApps": {
+    "children": [
+      "flex-layout.row#infocard-mobileAllApps"
+    ]
+  },
+  "flex-layout.row#infocard-desktopAllApps": {
+    "props": {
+      "blockClass": "infocardHome",
+      "marginTop": 8,
+      "marginBottom": 4,
+      "paddingTop": 9,
+      "paddingBottom": 9
+    },
+    "children": [
+      "flex-layout.col#textAndButtonAllApps",
+      "flex-layout.col#imageAllApps"
+    ]
+  },
+  "flex-layout.row#infocard-mobileAllApps": {
+    "props": {
+      "blockClass": ["infocardHome", "infocardHomeMobile"],
+      "marginTop": 4,
+      "marginBottom": 4,
+      "paddingTop": 9,
+      "paddingBottom": 9
+    },
+    "children": [
+      "flex-layout.col#imageMobileAllApps",
+      "flex-layout.col#textAndButtonMobileAllApps"
+    ]
+  },
+  "flex-layout.row#infocardAllApps": {
+    "props": {
+      "blockClass": "infocardHome",
+      "marginTop": 4,
+      "marginBottom": 4,
+      "paddingTop": 9,
+      "paddingBottom": 9
+    },
+    "children": [
+      "flex-layout.col#textAndButtonAllApps",
+      "flex-layout.col#imageAllApps"
+    ]
+  },
+  "flex-layout.col#textAndButtonAllApps": {
+    "props": {
+      "paddingLeft": 8,
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
+    },
+    "children": [ 
+      "rich-text#infoCardTitleAllApps",
+      "rich-text#infoCardBodyAllApps"
+    ]
+  },
+  "rich-text#infoCardTitleAllApps": {
+    "props": { 
+      "blockClass": "infoCardTitle",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "One click to go.",
+      "font": {
+        "desktop": "t-heading-1",
+        "mobile": "t-heading-4"
+      }
+    }
+  },
+  "rich-text#infoCardBodyAllApps": {
+    "props": { 
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "blockClass": "homeInfoCardBody",
+      "text": "Save time and money by taking\nadvantage of apps that are\nalready **programmed, tested**\n**and reviewed**.",
+      "font": {
+        "desktop": "t-heading-4",
+        "mobile": "t-paragraph"
+      }
+    }
+  },
+  "flex-layout.col#imageAllApps": { 
+    "props": {
+      "blockClass": "bannerHome",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#infoCardImageAllApps"
+    ]
+  },
+  "image#infoCardImageAllApps": { 
+    "props": {
+      "src": "assets/banner-home.jpg"
+    }
+  },
+
+  //mobile
+  "flex-layout.col#textAndButtonMobileAllApps": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children": [ 
+      "rich-text#infoCardTitleMobileAllApps",
+      "rich-text#infoCardBodyMobileAllApps"
+    ]
+  },
+  "rich-text#infoCardTitleMobileAllApps": {
+    "props": { 
+      "blockClass": "infoCardTitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "One click to go.",
+      "font": {
+        "desktop": "t-heading-1",
+        "mobile": "t-heading-4"
+      }
+    }
+  },
+  "rich-text#infoCardBodyMobileAllApps": {
+    "props": { 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "homeInfoCardBody",
+      "text": "Save time and money by taking\nadvantage of apps that are\nalready **programmed, tested**\n**and reviewed**.",
+      "font": {
+        "desktop": "t-heading-4",
+        "mobile": "t-paragraph"
+      }
+    }
+  },
+  "flex-layout.col#imageMobileAllApps": { 
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#infoCardImage"
+    ]
+  },
+  "image#infoCardImageMobileAllApps": { 
+    "props": {
+      "src": "assets/banner-home.jpg"
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+{
+  "vtex.menu@2.x:menu#main-menu": {
+    "children": [
+      "menu-item#category-apparel-accessories",
+      "menu-item#becomepartner",
+      "menu-item#findagency"
+    ]
+  },
+  "menu-item#category-apparel-accessories": {
+    "props": {
+      "id": "menu-item-category-apparel-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "ACESSÓRIOS"
+      }
+    }
+  },
+  "menu-item#becomepartner": {
+    "props": {
+      "id": "menu-item-becomepartner",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Become a partner",
+        "text": "MENINOS"
+      }
+    }
+  },
+  "menu-item#findagency": {
+    "props": {
+      "id": "menu-item-becomepartner",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Find an agency",
+        "text": "MENINAS"
+      }
+    }
+  }
+}

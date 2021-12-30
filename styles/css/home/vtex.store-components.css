@@ -1,0 +1,38 @@
+.logoImage {
+  display: block;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border-style: none;
+  height: 64px;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  display: none;
+}
+
+.imageElement--testimonyImg {
+  border-radius: 50%;
+}
+.container {
+  max-width: unset;
+}
+.imageElement--coverImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  padding: 0;
+}
+
+.imageElement--bottomCards {
+  object-fit: cover;
+  max-width: none;
+}
+.imageElement--lastBottomCard {
+  object-fit: cover;
+  max-width: none;
+}

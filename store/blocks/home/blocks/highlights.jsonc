@@ -1,0 +1,57 @@
+{
+  "search-result-layout.customQuery#highlights": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 4,
+        "orderByField": "OrderByReleaseDateDESC",
+        "queryField": "148",
+        "mapField": "productClusterIds",
+        "__unstableProductOriginVtex": true,
+        "simulationBehavior": "skip", 
+        "skusFilter": "FIRST_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#highlights"
+    ]
+  },
+  "search-result-layout.desktop#highlights": {
+    "children": [
+      "shelf-container#highlights"
+    ]
+  },
+  "shelf-container#highlights": {
+    "children": [
+      "flex-layout.row#shelfHighlights",
+      "search-content#defaultSearch"
+    ]
+  },
+  "flex-layout.row#shelfHighlights": {
+    "props": {
+      "blockClass": "homeShelf"
+    },
+    "children": [
+      "flex-layout.col#shelfHighlightsTitle"
+    ]
+  },
+  "flex-layout.col#shelfHighlightsTitle": {
+    "props": {
+      "rowGap": 3,
+      "verticalAlign": "bottom"
+    },
+    "children": [
+      "rich-text#shelfHighlightsTitle"
+    ]
+  },
+  "rich-text#shelfHighlightsTitle": {
+    "props": {
+      "blockClass": "noMargin",
+      "font": {
+        "desktop": "t-heading-4",
+        "mobile": "t-heading-5"
+      },
+      "textPosition": "LEFT",
+      "text": "Highlighted apps"
+    }
+  }
+}

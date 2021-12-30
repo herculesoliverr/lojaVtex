@@ -1,0 +1,77 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-desktop": {
+    "props": {
+      "blockClass": "footerContainer",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#vtex-logo",
+      "flex-layout.row#footer-info"
+    ]
+  },
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "footerContainer",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#vtex-logo",
+      "flex-layout.row#footer-info"
+    ]
+  },
+  "image#vtex-logo": {
+    "props": {
+      "width": 90,
+      "src": "assets/logo-loja.png"
+    }
+  },
+  "flex-layout.row#footer-info": {
+    "props": {
+      "colGap": 5,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right"
+    },
+    "children": [
+      "link#contact",
+      "link#privacy-policy"
+    ]
+  },
+
+  "link#contact": {
+    "props": {
+      "blockClass": "footerInfo",
+      "target": "blank",
+      "label": "Contato",
+      "href": "https://vtex.com/en-us/contact/",
+      "displayMode": "link"
+    }
+  },
+
+  "link#privacy-policy": {
+    "props": {
+      "blockClass": "footerInfo",
+      "target": "blank",
+      "label": "Política de privacidade",
+      "href": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+      "displayMode": "link"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#header"
+    ]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "responsive-layout.tablet#header-tablet",
+      "responsive-layout.phone#header-phone"
+    ]
+  },
+  "responsive-layout.tablet#header-tablet": {
+    "children": [
+      "flex-layout.row#header-mobile"
+    ]
+  },
+  "responsive-layout.phone#header-phone": {
+    "children": [
+      "flex-layout.row#header-mobile"
+    ]
+  },
+  "flex-layout.row#header": {
+    "props": {
+      "blockClass": "header",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "logo",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#main-menu",
+      "app-store-selector",
+      "locale-switcher",
+      "login-menu#login"
+    ]
+  },
+  "login-menu#login": {
+    "props": {
+      "id": "menu-item-login",
+      "loginText": "LOGIN",
+      "logoutText": "LOGOUT",
+      "blockClass": "login"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "logo": {
+    "props": {
+      "title": "VTEX logo",
+      "href": "/",
+      "height": "50",
+      "url": "assets/logo-loja.png"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "VTEX logo",
+      "href": "/",
+      "height": "30",
+      "url": "assets/logo-loja.png"
+    }
+  },
+  "flex-layout.row#header-mobile": {
+    "props": {
+      "blockClass": "header",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "app-store-selector",
+      "locale-switcher",
+      "drawer"
+    ]
+  },
+  "drawer": {
+    "children": [
+      "flex-layout.col#drawer-content"
+    ]
+  },
+  "flex-layout.col#drawer-content": {
+    "children": [
+      "vtex.menu@2.x:menu#main-menu",
+      "login-menu#login"
+    ]
+  },
+  //header da home
+  "header#home": {
+    "blocks": [
+      "header-layout.desktop#home",
+      "header-layout.mobile#home"
+    ]
+  },
+  "header.full#home": {
+    "blocks": [
+      "header-layout.desktop#home",
+      "header-layout.mobile#home"
+    ]
+  },
+  "header-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#headerhome"
+    ]
+  },
+  "header-layout.mobile#home": {
+    "children": [
+      "responsive-layout.tablet#header-tablethome",
+      "responsive-layout.phone#header-phonehome"
+    ]
+  },
+  "responsive-layout.tablet#header-tablethome": {
+    "children": [
+      "flex-layout.row#header-mobilehome"
+    ]
+  },
+  "responsive-layout.phone#header-phonehome": {
+    "children": [
+      "flex-layout.row#header-mobilehome"
+    ]
+  },
+  "flex-layout.row#headerhome": {
+    "props": {
+      "blockClass": "transparent",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "logo",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#main-menu",
+      "app-store-selector",
+      "locale-switcher",
+      "login-menu#login"
+    ]
+  },
+  "flex-layout.row#header-mobilehome": {
+    "props": {
+      "blockClass": "transparent",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "app-store-selector",
+      "locale-switcher",
+      "drawer"
+    ]
+  }
+}

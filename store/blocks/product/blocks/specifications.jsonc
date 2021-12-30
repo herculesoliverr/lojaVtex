@@ -1,0 +1,44 @@
+{
+  "flex-layout.col#specifications": {
+    "props": {
+      "blockClass": "specifications",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.col#appOverview",
+      "flex-layout.col#appFeatures",
+      "condition-layout.product#additionalInformation",
+      "flex-layout.col#appPricing",
+      "flex-layout.col#appScreenshots",
+      "product-reviews#reviews"
+    ]
+  },
+  "product-reviews#reviews": {
+    "props": {
+      "blockClass": "reviews",
+      "htmlId": "reviews"
+    }
+  },
+  "condition-layout.product#additionalInformation": {
+    "children": [
+      "condition.product#additionalInformation"
+    ]
+  },
+  "condition.product#additionalInformation": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "verb": "contains",
+          "object": [
+            "additionalInformation"
+          ]
+        }
+      ]
+    },
+    "children": [
+      "flex-layout.col#appAdditionalInformation"
+    ]
+  }
+}

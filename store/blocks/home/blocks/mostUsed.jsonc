@@ -1,0 +1,78 @@
+{
+  "search-result-layout.customQuery#mostUsed": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 8,
+        "orderByField": "OrderByReleaseDateDESC",
+        "queryField": "139",
+        "mapField": "productClusterIds",
+        "__unstableProductOriginVtex": true,
+        "simulationBehavior": "skip", 
+        "skusFilter": "FIRST_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#mostUsed"
+    ]
+  },
+  "search-result-layout.desktop#mostUsed": {
+    "children": [
+      "shelf-container#mostUsed"
+    ]
+  },
+  "shelf-container#mostUsed": {
+    "children": [
+      "flex-layout.row#homeShelf",
+      "search-content#defaultSearch"
+    ]
+  },
+  "flex-layout.row#homeShelf": {
+    "props": {
+      "blockClass": "homeShelf"
+    },
+    "children": [
+      "flex-layout.col#homeShelf1",
+      "flex-layout.col#homeShelf2"
+    ]
+  },
+  "flex-layout.col#homeShelf1": {
+    "props": {
+      "rowGap": 3,
+      "verticalAlign": "bottom"
+    },
+    "children": [
+      "rich-text#homeShelf2"
+    ]
+  },
+  "flex-layout.col#homeShelf2": {
+    "props": {
+      "verticalAlign": "bottom"
+    },
+    "children": [
+      "responsive-layout.desktop#explore"
+    ]
+  },
+  "responsive-layout.desktop#explore": {
+    "children": [
+      "link#homeShelf3"
+    ]
+  },
+  "rich-text#homeShelf2": {
+    "props": {
+      "blockClass": "noMargin",
+      "font": {
+        "desktop": "t-heading-4",
+        "mobile": "t-heading-5"
+      },
+      "textPosition": "LEFT",
+      "text": "Most used apps"
+    }
+  },
+  "link#homeShelf3": {
+    "props": {
+      "blockClass": ["homeShelf3", "hideMobile"],
+      "href": "/all-apps",
+      "label": "Explore all apps"
+    }
+  }
+}

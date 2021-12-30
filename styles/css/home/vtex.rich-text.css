@@ -1,0 +1,169 @@
+.paragraph--storeHeadline {
+  font-weight: normal;
+  color: white;
+  line-height: 1.3125;
+}
+
+.paragraph--categoryCard {
+  text-align: center;
+  font-weight: normal;
+  color: white;
+}
+
+.container--categoryCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper--categoryCard {
+  text-align: center;
+}
+
+.link--categoryCard {
+  text-decoration: none;
+  color: white;
+}
+
+
+.paragraph--homeInfoCardBody {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  /* font-size: 1.63rem; */
+}
+
+.container--homeInfoCardBody {
+  justify-content: flex-start;
+}
+
+.paragraph--infoCardTitle {
+  color: #DD1659;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.container--infoCardTitle {
+  justify-content: flex-start;
+}
+
+.container--rightPositioned {
+  margin-right: 2rem;
+}
+
+.paragraph--bottomCardsBody {
+  padding-top: 1rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+.paragraph--noMarginTop {
+  margin-top: 0;
+}
+
+.paragraph--noMargin {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.paragraph--bottomCardsBodyBig {
+  color: white;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.paragraph--bottomCardsBodyMobile {
+  line-height: 1.17;
+  font-size: 1.125rem;
+  padding-left: 2rem;
+}
+
+.container--bottomCardsBodyMobile{
+  align-items: center;
+  justify-content: center;
+}
+
+.container--bottomCardsBodyBigMobile{
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph--bottomCardsBodyBigMobile {
+  line-height: 1.17;
+  font-size: 1.125rem;
+  color: white;
+  padding-left: 2rem;
+}
+
+.link--bottomCardsBodyBig {
+  color: white;
+}
+
+
+
+.link--bottomCardsBodyBigMobile {
+  color: white;
+}
+
+
+.paragraph--testimonyBody {
+  font-weight: 300;
+}
+
+.paragraph--testimonyAuthor {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+/**
+  Desktop specifics
+*/
+
+@media (min-width: 40rem) {
+  .container--categoryCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrapper--categoryCard {
+    text-align: center;
+  }
+
+  .link--categoryCard {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+
+
+  .paragraph--categoryCard {
+    margin: 0;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .container--testimonyBody {
+    text-align: left;
+  }
+
+  .container--testimonyAuthor {
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: start;
+  }
+
+  .paragraph--infoCardTitle {
+    color: #DD1659;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .paragraph--testimonyBody {
+    text-align: center;
+  }
+}

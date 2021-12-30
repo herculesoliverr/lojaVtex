@@ -1,0 +1,73 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#search-bar",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.phone#mobile",
+      "responsive-layout.tablet#tablet"
+    ]
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": [
+      "flex-layout.row#mainContainer"
+    ]
+  },
+  "flex-layout.row#mainContainer": {
+    "props": {
+      "horizontalAlign": "CENTER",
+      "marginBottom": 10,
+      "blockClass": "mainContainer"
+    },
+    "children": [
+      "flex-layout.col#mainWrapper"
+    ]
+  },
+  "flex-layout.col#mainWrapper": {
+    "props": {
+      "marginTop": 8,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#compatibility-alert",
+      "flex-layout.row#pdp"
+    ]
+  },
+  "flex-layout.row#pdp": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 6
+    },
+    "children": [
+      "flex-layout.col#sideBar",
+      "flex-layout.col#pdpContainer"
+    ]
+  },
+  "flex-layout.col#pdpContainer": {
+    "props": {
+      "width": "grow",
+      "blockClass": "pdpContainer",
+      "marginRight": 0,
+      "preventHorizontalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.col#topBar",
+      "flex-layout.col#specifications",
+      "custom-shelf"
+    ]
+  },
+  "flex-layout.row#compatibility-alert": {
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": 4
+    }, 
+    "children": [
+      "vtex.app-store-compatibility-alert:compatibility-alert"
+    ]
+  },
+  "vtex.app-store-compatibility-alert:compatibility-alert": {
+    "props": {
+      "blockClass": "compatibility-alert"
+    }
+  }
+}

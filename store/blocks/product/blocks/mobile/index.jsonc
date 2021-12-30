@@ -1,0 +1,113 @@
+{
+  "responsive-layout.phone#mobile": {
+    "children": [
+      "flex-layout.row#mainContainerMobile"
+    ]
+  },
+  "flex-layout.row#mainContainerMobile": {
+    "props": {
+      "blockClass": "mainContainerMobile"
+    },
+    "children": [
+      "flex-layout.col#pdpContainerMobile"
+    ]
+  },
+  "flex-layout.col#pdpContainerMobile": {
+    "props": {
+      "rowGap": 6
+    },
+    "children": [
+      "flex-layout.row#compatibility-alert",
+      "flex-layout.row#productOverview",
+      "button-get-app",
+      "flex-layout.col#specificationsMobile"
+    ]
+  },
+  "flex-layout.row#productOverview": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 6
+    },
+    "children": [ 
+      "product-images#productLogo",
+      "flex-layout.col#informationContainer"
+    ]
+  },
+  "flex-layout.col#informationContainer": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 1
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "flex-layout.row#brand"
+    ]
+  },
+  //Tablet
+  "responsive-layout.tablet#tablet": {
+    "children": [
+      "flex-layout.row#mainContainerTablet"
+    ]
+  },
+  "flex-layout.row#mainContainerTablet": {
+    "props": {
+      "blockClass": "mainContainerTablet"
+    },
+    "children": [
+      "flex-layout.col#pdpContainerTablet"
+    ]
+  },
+  "flex-layout.col#pdpContainerTablet": {
+    "props": {
+      "rowGap": 6
+    },
+    "children": [
+      "flex-layout.row#compatibility-alert",
+      "flex-layout.row#productOverviewTablet",
+      "flex-layout.col#specificationsMobile"
+    ]
+  },
+  "flex-layout.row#productOverviewTablet": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colGap": 6
+    },
+    "children": [ 
+      "product-images#productLogo",
+      "flex-layout.col#informationContainerTablet"
+    ]
+  },
+  "flex-layout.col#informationContainerTablet": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 1
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "flex-layout.row#brand",
+      "button-get-app#pdpTablet"
+    ]
+  },
+  "button-get-app#pdpTablet": {
+    "props": {
+      "blockClass": "pdpTablet"
+    }
+  },
+  "flex-layout.row#compatibility-alert": {
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": 4
+    }, 
+    "children": [
+      "vtex.app-store-compatibility-alert:compatibility-alert#pdp"
+    ]
+  },
+  "vtex.app-store-compatibility-alert:compatibility-alert#pdp": {
+    "props": {
+      "blockClass": "pdpCompatibilityAlert"
+    }
+  }
+}

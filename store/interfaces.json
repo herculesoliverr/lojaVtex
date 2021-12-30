@@ -1,0 +1,12 @@
+{
+  "shelf-container": {
+    "component": "ShelfContainer",
+    "composition": "children"
+  },
+  "not-found-box": {
+    "component": "NotFoundBox"
+  },
+  "custom-shelf": {
+    "component": "Shelf"
+  }
+}

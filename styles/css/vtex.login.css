@@ -1,0 +1,8 @@
+.label {
+  color: white;
+  display: block;
+}
+
+.container :global(.vtex-button):hover {
+  background-color: transparent;
+}

@@ -1,0 +1,35 @@
+{
+  "flex-layout.col#appScreenshots": {
+    "props": {
+      "blockClass": "appSpecificationContainer",
+      "rowGap": 5,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "rich-text#appScreenshotsHeader",
+      "app-images-slider#screenshots"
+    ]
+  },
+  "rich-text#appScreenshotsHeader": {
+    "props": {
+      "blockClass": "specificationName",
+      "text": "**Screenshots**",
+      "htmlId": "screenshots"
+    }
+  },
+  "app-images-slider#screenshots": {
+    "props": {
+      "orderBy": "imageLabel",
+      "filterPattern": "screenshotDesktop",
+      "sliderLayoutProps": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        }
+      },
+      "blockClass": "screenshots"
+    }
+  }
+}

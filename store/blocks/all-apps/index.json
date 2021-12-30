@@ -1,0 +1,33 @@
+{
+  "store.custom#all-apps": {
+    "blocks": [
+      "flex-layout.row#search-bar",
+      "flex-layout.row#allapps-container"
+    ]
+  },
+  "flex-layout.row#allapps-container": {
+    "props": {
+      "blockClass": "allAppsContainer",
+      "paddingBottom": 10
+    },
+    "children": ["flex-layout.col#allapps-container"]
+  },
+  "flex-layout.col#allapps-container": {
+    "children": [
+      "responsive-layout.desktop#infocardAllApps",
+      "responsive-layout.tablet#infocardAllApps",
+      "search-result-layout.customQuery#marketing",
+      "search-result-layout.customQuery#review",
+      "search-result-layout.customQuery#customerSupport",
+      "search-result-layout.customQuery#channels",
+      "search-result-layout.customQuery#finance",
+      "search-result-layout.customQuery#omnichannel",
+      "search-result-layout.customQuery#privacy",
+      "search-result-layout.customQuery#developer",
+      "search-result-layout.customQuery#storeDesign",
+      "responsive-layout.desktop#all-apps",
+      "responsive-layout.tablet#all-apps",
+      "responsive-layout.phone#all-apps"
+    ]
+  }
+}

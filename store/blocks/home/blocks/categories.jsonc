@@ -1,0 +1,169 @@
+{
+  "responsive-layout.desktop#categories": {
+    "children": [
+      "flex-layout.row#categories"
+    ]
+  },
+  "responsive-layout.tablet#categories": {
+    "children": [
+      "flex-layout.row#categories"
+    ]
+  },
+  "responsive-layout.phone#categories": {
+    "children": [
+      "flex-layout.row#categories-mobile-1",
+      "flex-layout.row#categories-mobile-2"
+    ]
+  },
+  "flex-layout.row#categories-mobile-1": {
+    "props": {
+      "colGap": 3,
+      "preserveLayoutOnMobile": true,
+      "marginBottom": 3,
+      "blockClass": "categoriesMobile"
+    },
+    "children": [
+      "flex-layout.col#categories1",
+      "flex-layout.col#categories2"
+    ]
+  },
+  "flex-layout.row#categories-mobile-2": {
+    "props": {
+      "colGap": 3,
+      "preserveLayoutOnMobile": true,
+      "marginRight": 7,
+      "blockClass": "categoriesMobile2"
+    },
+    "children": [
+      "flex-layout.col#categories3",
+      "flex-layout.col#categories4"
+    ]
+  },
+  "flex-layout.row#categoriesTitle": {
+    "props": {
+      "blockClass": "categoriesTitle"
+    },
+    "children": [
+      "flex-layout.col#categoriesTitle1",
+      "flex-layout.col#categoriesTitle2"
+    ]
+  },
+  "flex-layout.col#categoriesTitle1": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "rich-text#categoriesTitle"
+    ]
+  },
+  "flex-layout.col#categoriesTitle2": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "responsive-layout.desktop#explore"
+    ]
+  },
+  "flex-layout.row#categories": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "categoryRow"
+    },
+    "children": [
+      "flex-layout.col#categories1",
+      "flex-layout.col#categories2",
+      "flex-layout.col#categories3",
+      "flex-layout.col#categories4"
+    ]
+  },
+  "flex-layout.col#categories1": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "categoryCard",
+        "card1Color"
+      ]
+    },
+    "children": [
+      "link#categories1"
+    ]
+  },
+  "flex-layout.col#categories2": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "categoryCard",
+        "card2Color"
+      ]
+    },
+    "children": [
+      "link#categories2"
+    ]
+  },
+  "flex-layout.col#categories3": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "categoryCard",
+        "card3Color"
+      ]
+    },
+    "children": [
+      "link#categories3"
+    ]
+  },
+  "flex-layout.col#categories4": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "categoryCard",
+        "card4Color"
+      ]
+    },
+    "children": [
+      "link#categories4"
+    ]
+  },
+  "rich-text#categoriesTitle": {
+    "props": {
+      "blockClass": "noMargin",
+      "font": {
+        "desktop": "t-heading-4",
+        "mobile": "t-heading-5"
+      },
+      "text": "Top categories"
+    }
+  },
+  "link#categories1": {
+    "props": {
+      "blockClass": "categoryCard",
+      "href": "/all-apps#marketing",
+      "scrollTo": "marketing",
+      "label": "Marketing and affiliate programs"
+    }
+  },
+  "link#categories2": {
+    "props": {
+      "blockClass": "categoryCard",
+      "href": "/all-apps#customerSupport",
+      "scrollTo": "customerSupport",
+      "label": "Customer support and notifications"
+    }
+  },
+  "link#categories3": {
+    "props": {
+      "blockClass": "categoryCard",
+      "href": "/all-apps#channels",
+      "scrollTo": "channels",
+      "label": "Marketplaces and channels"
+    }
+  },
+  "link#categories4": {
+    "props": {
+      "blockClass": "categoryCard",
+      "href": "/all-apps#review",
+      "scrollTo": "review",
+      "label": "Reviews, ratings and analytics"
+    }
+  }
+}

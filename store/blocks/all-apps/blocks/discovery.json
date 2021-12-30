@@ -1,0 +1,32 @@
+{
+  "flex-layout.col#all-apps-discovery": {
+    "props": {
+      "blockClass": "allAppsDiscovery",
+      "width": "48%"
+    },
+    "children": ["rich-text#all-apps-discovery", "link#all-apps-discovery"]
+  },
+  "rich-text#all-apps-discovery": {
+    "props": {
+      "blockClass": "allAppsBottomRight",
+      "text": "Discovery the best solutions to grow your business",
+      "font": {
+        "desktop": "t-heading-4",
+        "phone": "t-heading-4"
+      }
+    }
+  },
+
+  "link#all-apps-discovery": {
+    "props": {
+      "blockClass": ["cardButton", "rebelPink"],
+      "label": "GET TO KNOW VTEX",
+      "href": "https://vtex.com/us-en/",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "regular"
+      }
+    }
+  }
+}

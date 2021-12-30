@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#search-bar": {
+    "props": {
+      "blockClass": "searchBar"
+    },
+    "children": ["flex-layout.col#search-bar"]
+  },
+  "flex-layout.col#search-bar": {
+    "children": ["search-bar"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "hasIconLeft": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#defaultSearch"],
+    "props": {
+      "autocompleteWidth": 100,
+      "__unstableProductOriginVtex": true,
+      "simulationBehavior": "skip", 
+      "skusFilter": "FIRST_AVAILABLE"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "responsive-layout.desktop#all-apps": {
+    "children": ["flex-layout.row#all-apps-bottom"]
+  },
+  "responsive-layout.phone#all-apps": {
+    "children": ["flex-layout.col#all-apps-bottom-col"]
+  },
+  "responsive-layout.tablet#all-apps": {
+    "children": ["flex-layout.col#all-apps-bottom-tablet"]
+  },
+  "flex-layout.col#all-apps-bottom-tablet": {
+    "props": {
+      "rowGap": "4"
+    },
+    "children": [
+      "flex-layout.row#all-apps-earn-money",
+      "flex-layout.row#all-apps-two"
+    ]
+  },
+  "flex-layout.col#all-apps-bottom-col": {
+    "props": {
+      "rowGap": "4"
+    },
+    "children": [
+      "flex-layout.row#all-apps-earn-money",
+      "flex-layout.col#all-apps-find-agencies",
+      "flex-layout.col#all-apps-discovery"
+    ]
+  },
+  "flex-layout.row#all-apps-bottom": {
+    "props": {
+      "blockClass": "allAppsBottom"
+    },
+    "children": [
+      "flex-layout.col#all-apps-left",
+      "flex-layout.col#all-apps-right"
+    ]
+  },
+  "flex-layout.col#all-apps-right": {
+    "children": ["flex-layout.row#all-apps-earn-money"]
+  },
+  "flex-layout.col#all-apps-left": {
+    "props": {
+      "blockClass": "allAppsLeftCol",
+      "rowGap": "6"
+    },
+    "children": ["flex-layout.row#bottomCardsLeft"]
+  },
+  "flex-layout.row#bottomCardsLeft": {
+    "props": {
+      "colGap": 6
+    },
+    "children": ["flex-layout.col#bottomCard1", "flex-layout.col#bottomCard2"]
+  },
+  "flex-layout.row#all-apps-two": {
+    "props": {
+      "blockClass": "allAppsTwoTiles",
+      "colJustify": "between"
+    },
+    "children": [
+      "flex-layout.col#all-apps-find-agencies",
+      "flex-layout.col#all-apps-discovery"
+    ]
+  }
+}

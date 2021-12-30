@@ -1,0 +1,118 @@
+.flexRow--search {
+  background-color: white;
+  padding: 1rem 0;
+}
+
+.flexRow--testimonyAllApps {
+  background-color: #003352;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+.flexRow--borderBottom {
+  border-bottom: 1px solid #cacbcc;
+}
+
+.flexCol--allAppsLeftCol {
+  margin-right: 1.5rem;
+}
+
+.flexRowContent--allAppsTwoTiles {
+  justify-content: space-between;
+}
+
+.flexCol--allAppsFindAgencies,
+.flexCol--allAppsDiscovery {
+  background-color: white;
+  padding: 2rem;
+}
+
+.flexCol--allAppsEarnMoney {
+  padding: 3rem 0 0 4rem;
+}
+
+.flexRow--earnMoneyText {
+  width: 50%;
+}
+
+.flexRow--allAppsBanners {
+  margin-top: 2rem;
+}
+
+.flexRow--allAppsBottom {
+  margin-top: 8rem;
+}
+
+.flexRow--allAppsContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexCol--allAppsEarnMoney {
+  padding: 1rem 0 0 1rem;
+}
+
+.flexRow--searchBar {
+  background-color: white;
+}
+
+/** Verify it it's here */
+.flexRow--dark {
+  width: 100%;
+  background: #25354d;
+}
+
+.flexColChild--allAppsFindAgencies, .flexColChild--allAppsDiscovery {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flexRowContent--allAppsEarnMoney {
+  height: 100%;
+}
+
+.flexRow--allAppsEarnMoney {
+  height: 100%;
+}
+
+@media (min-width: 40rem) { 
+  .flexRow--allAppsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .flexRow--allAppsContainer {
+    max-width: 90rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flexRow--testimonyAllApps {
+    width: 100%;
+    padding-top: 0
+  }
+
+  .flexCol--testimonyTextCol {
+    padding-right: 1rem;
+  }
+  
+  .flexCol--testimonyAllApps {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .flexCol--allAppsEarnMoney {
+    padding: 3rem 0 0 4rem;
+  }
+}

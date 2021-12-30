@@ -1,0 +1,14 @@
+.styledLinkContent {
+  color: white
+}
+
+.menuContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media(max-width: 66rem) {
+  .menuContainer {
+    flex-direction: column;
+  }
+}
