@@ -30,10 +30,8 @@ node_modules/
 docs/_book/
 .tmp
 .idea
-.vscode
 npm-debug.log
 .build/
 lib
-package-lock.json
-
 *.orig
+react/package-lock.json

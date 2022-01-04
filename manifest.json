@@ -65,7 +65,10 @@
     "vtex.product-list": "0.x",
     "vtex.my-orders-app": "3.x",
     "vtex.my-cards": "1.x",
-    "vtex.app-store-compatibility-alert": "0.x"
+    "vtex.app-store-compatibility-alert": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.order-placed-graphql": "1.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"

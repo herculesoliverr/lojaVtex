@@ -1,3 +1,11 @@
+/* SHELF ITEMS */
+.containerShelf{
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+
+
 .productImage--productLogo {
   border-radius: 0.25rem;
   border: 1px solid #E3E4E6;

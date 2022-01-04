@@ -14,7 +14,7 @@
   },
   "flex-layout.row#mainContainer": {
     "props": {
-      "horizontalAlign": "CENTER",
+      "horizontalAlign": "center",
       "marginBottom": 10,
       "blockClass": "mainContainer"
     },

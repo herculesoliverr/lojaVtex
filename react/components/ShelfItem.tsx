@@ -1,25 +1,46 @@
-import React from 'react';
-//import {useCssHandles} from 'vtex.css-handles'
+import React from 'react'
+import { useCssHandles } from 'vtex.css-handles'
+import { formatPrice } from '../helpers/Helper'
 
-// const CSS_HANDLES = [
-//   'container',
-//   'shelfTitle'
-// ]
+const CSS_HANDLES = [
+  'shelfItem',
+  'shelfLink',
+  'shelfImage',
+  'shelfImage__img',
+  'shelfProductName',
+  'shelfPrice',
+  'shelfSellingPrice',
+  'shelfBestPrice',
+  'shelfButtonAddToCart',
+]
 
-const ShelfItem = ({linkURL, imageURL, name, price, sellingPrice}: shelfType) => {
-  //const handles = useCssHandles(CSS_HANDLES)
-  return(
+const ShelfItem = ({
+  id,
+  linkURL,
+  imageURL,
+  name,
+  price,
+  sellingPrice,
+}: shelfType) => {
+  const handles = useCssHandles(CSS_HANDLES)
+  return (
     <>
-      <div className='shelfItem'>
-        <a href={`${linkURL}`} className='shelfLink'></a>
-          <div className='shelfImage'>
-            <img src={`${imageURL}`} alt={`${name}`} className='shelfImage_img'/>
-          </div>
-          <h2 className='shelfProductName'>{`${name}`}</h2>
-          <div className='shelfPrice'>
-            <p className='shelfSellingPrice'>{`${sellingPrice}`}</p>
-            <p className='shelfBestPrice'>{`${price}`}</p>
-          </div>
+      <div key={id} className={`${handles.shelfItem}`}>
+        <a href={`${linkURL}`} className={`${handles.shelfLink}`}></a>
+        <div className={`${handles.shelfLink}`}>
+          <img
+            src={`${imageURL}`}
+            alt={`${name}`}
+            className={`${handles.shelfImage__img}`}
+          />
+        </div>
+        <h2 className={`${handles.shelfProductName}`}>{`${name}`}</h2>
+        <div className={`${handles.shelfPrice}`}>
+          <p className={`${handles.shelfSellingPrice}`}>
+            {formatPrice(sellingPrice)}
+          </p>
+          <p className={`${handles.shelfBestPrice}`}>{formatPrice(price)}</p>
+        </div>
       </div>
     </>
   )
