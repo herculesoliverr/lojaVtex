@@ -5,10 +5,21 @@
     },
     "blocks": [
       "stack-layout#cover",
-      "flex-layout.row#search-bar",
+      //"flex-layout.row#search-bar",
+      "custom-InformationHome",
+      "custom-Countdown",
+      "info-card#home",
+      //"list-context.image-list#demo",
+      //"custom-CarouselPromo",
       "flex-layout.row#main-container",
       "__fold__",
-      "flex-layout.row#main-container-2"
+      "flex-layout.row#main-container-2",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
     ]
   },
   "flex-layout.row#main-container": {
@@ -24,6 +35,7 @@
       "search-result-layout.customQuery#mostUsed",
       "search-result-layout.customQuery#highlights",
       "search-result-layout.customQuery#newApps",
+      "custom-shelf",
       "flex-layout.row#categoriesTitle",
       "responsive-layout.desktop#categories",
       "responsive-layout.phone#categories",
@@ -50,5 +62,61 @@
       "responsive-layout.tablet#bottomCards",
       "responsive-layout.desktop#bottomCards"
     ]
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## VERÃO ##",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Mais Ofertas !",
+      "callToActionText": "Veja mais !",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
   }
 }

@@ -1,4 +1,12 @@
+.flexRow--transparent{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .flexRowContent--footerContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.flexRow--searchBar{
+  background-color: rgba(0, 0, 0, 0.8);
 }

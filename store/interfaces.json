@@ -8,5 +8,14 @@
   },
   "custom-shelf": {
     "component": "Shelf"
+  },
+  "custom-InformationHome": {
+    "component": "InformationHome"
+  },
+  "custom-CarouselPromo": {
+    "component": "CarouselPromo"
+  },
+  "custom-Countdown":{
+    "component": "Countdown"
   }
 }

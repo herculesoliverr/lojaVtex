@@ -9,3 +9,7 @@
     margin: 0;
     padding: 0;
 }
+
+.paragraph--noMargin{
+    padding: 40px 0;
+}

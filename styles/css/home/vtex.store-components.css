@@ -36,3 +36,19 @@
   object-fit: cover;
   max-width: none;
 }
+
+.infoCardContainer{
+  margin-top: 120px;
+  background-color: #dbdbdb;
+}
+
+.infoCardHeadline{
+  font-size: 36px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.infoCardCallActionContainer{
+  background-color: #6186ec;
+}

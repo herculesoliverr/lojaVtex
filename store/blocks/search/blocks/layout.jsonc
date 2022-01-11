@@ -61,7 +61,7 @@
   },
   "total-products.v2": { 
     "props": { 
-      "message": "We found {recordsFiltered} {recordsFiltered, plural, one {result} other {results}} for"
+      "message": "Foram encontrados {recordsFiltered} {recordsFiltered, plural, one {resultado} other {resultados}} para"
     }
   }
 }

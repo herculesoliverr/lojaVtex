@@ -1,7 +1,9 @@
 .searchBarContainer {
-  max-width: unset;
-  height: 80px;
-  padding-top: 0.5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.logoImage{
+  margin-left: 2.5em;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input),

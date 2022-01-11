@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import ShelfItem from './components/ShelfItem'
+import ShelfItem from './components/ShelfItem/ShelfItem'
 import { SliderLayout } from 'vtex.slider-layout'
-import { useCssHandles } from 'vtex.css-handles'
+import styles from '../react/components/ShelfItem/ShelfItem.css'
+//import {useOrderItems} from 'vtex.order-items/OrderItems'
 
-const CSS_HANDLES = ['containerShelf']
 
 const Shelf = () => {
-  const handles = useCssHandles(CSS_HANDLES)
+ //const {addItem} = useOrderItems
   const [arrayProducts, setArrayProducts] = useState([]) as any
 
   useEffect(() => {
@@ -14,17 +14,15 @@ const Shelf = () => {
   }, [])
 
   const getCategoryItems = () => {
-    fetch('/api/catalog_system/pub/products/search')
+    fetch('/api/catalog_system/pub/products/search/maio')
       .then(response => response.json())
       .then(data => {
         setArrayProducts(data)
       })
   }
 
-  console.log(arrayProducts)
-
   return (
-    <div className={`${handles.containerShelf}`}>
+    <div className={styles.containerShelf}>
       {arrayProducts ? (
         <>
           <SliderLayout
