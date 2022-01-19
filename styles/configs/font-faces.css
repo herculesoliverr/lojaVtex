@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('assets/fonts/JosefinSans-Regular.ttf');
+  font-weight: 400;
+}

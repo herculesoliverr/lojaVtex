@@ -24,11 +24,11 @@
   text-decoration: inherit;
 }
 
-.shelfImage {
+.shelfImage__img {
   position: relative;
   background-color: #f7f7f7;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 16em;
+  max-height: 16em;
 }
 
 .shelfProductName {
@@ -89,4 +89,15 @@
   max-width: 50%;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.containerShelfTitle{
+  position: relative;
+}
+
+.titleShelf{
+  font-size: 26px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-left: 12px;
 }

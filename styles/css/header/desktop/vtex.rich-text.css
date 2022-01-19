@@ -1,0 +1,18 @@
+.paragraph--text_top-bar{
+  font-size: 16px;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-family: Roboto;
+  gap: 10px;
+}
+
+.wrapper--email_top-bar, .wrapper--text_top-bar {
+  margin-right: 30px;
+}
+
+.paragraph--text_top-bar, .wrapper--cart_top-bar{
+  margin: 0;
+}
+

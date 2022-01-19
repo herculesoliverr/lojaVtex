@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#top-bar": {
+    "props": {
+      "blockClass": "wrapper_top-bar"
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+
+  "flex-layout.col#left": {
+    "children": [
+      "rich-text#email-text",
+      "rich-text#phone-text"
+    ],
+    "props": {
+      "blockClass": ["wrapper_col", "wrapper_col-left"]
+    }
+  },
+
+  "flex-layout.col#right": {
+    "children": [
+      "rich-text#login-text",
+      "rich-text#wishlist-text",
+      "rich-text#cart-text"
+    ],
+    "props": {
+      "blockClass": ["wrapper_col", "wrapper_col-right"]
+    }
+  },
+
+  "rich-text#email-text": {
+    "props": {
+      "blockClass": ["text_top-bar", "email_top-bar"],
+      "text": "![email](assets/img/top-bar/email.svg) atacadoinfantil@gmail.com"
+    }
+  },
+
+  "rich-text#phone-text": {
+    "props": {
+    "blockClass": ["text_top-bar", "phone_top-bar"],
+    "text": "![phone](assets/img/top-bar/phone.svg) +55 (31) 99999-9999"
+    }
+  },
+
+  "rich-text#login-text": {
+    "props": {
+      "blockClass" : ["text_top-bar", "login_top-bar"],
+      "text": "Login ![login](assets/img/top-bar/login.svg)"
+    }
+  },
+
+  "rich-text#wishlist-text": {
+    "props": {
+      "blockClass" : ["text_top-bar", "wishlist_top-bar"],
+      "text": "Wishlist ![wishlist](assets/img/top-bar/heart.svg)"
+    }
+  },
+
+  "rich-text#cart-text": {
+    "props": {
+      "blockClass" : ["text_top-bar", "cart_top-bar"],
+      "text": "![login](assets/img/top-bar/cart.svg)"
+    }
+  }
+
+}

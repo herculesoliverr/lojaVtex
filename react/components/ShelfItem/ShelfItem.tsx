@@ -13,7 +13,7 @@ const ShelfItem = ({
   return (
     <div>
       <div key={id} className={styles.shelfItem}>
-        <a href={`${linkURL}`} className={styles.shelfLink}></a>
+        <a href={`${linkURL}`} className={styles.shelfLink}>
         <div className={styles.shelfLink}>
           <img
             src={`${imageURL}`}
@@ -22,6 +22,7 @@ const ShelfItem = ({
           />
         </div>
         <h2 className={styles.shelfProductName}>{`${name}`}</h2>
+        </a>
         <div className={styles.shelfPrice}>
           <p className={styles.shelfSellingPrice}>
             {formatPrice(sellingPrice)}

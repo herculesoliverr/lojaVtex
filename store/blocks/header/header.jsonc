@@ -44,6 +44,8 @@
       "vtex.menu@2.x:menu#main-menu",
       "app-store-selector",
       "locale-switcher",
+      "minicart",
+      "minicart-base-content",
       "login-menu#login"
     ]
   },
@@ -117,7 +119,8 @@
   },
   "header-layout.desktop#home": {
     "children": [
-      "flex-layout.row#headerhome"
+      "flex-layout.row#top-bar"
+     // "flex-layout.row#headerhome"
     ]
   },
   "header-layout.mobile#home": {

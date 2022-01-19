@@ -1,0 +1,57 @@
+.containerCardItensHome {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 1280px;
+  margin: 50px auto;
+}
+
+.containerCardOne{
+  background: #000;
+  color: white;
+}
+
+.containerCardOne, .containerCardTwo, .containerCardThree, .containerCardFour, .containerCardFive {
+  max-width: 20%;
+  height: 250px;
+  position: relative;
+  justify-content: center;  
+  flex-direction: column;
+  width: 20%;
+}
+
+.textCardOne{
+  display: flex;
+  position: relative;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto auto 31px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.containerCardTwo:hover{
+  background-color: #fafafa;
+}
+
+.textCardOne:hover:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #6186ec;
+  bottom: -10px;
+  left: 0;
+  animation: animationText 0.5s ease forwards;
+}
+
+@keyframes animationText {
+  from{
+    width: 0%;
+  } to {
+    width: 100%;
+  }
+}

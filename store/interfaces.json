@@ -12,8 +12,8 @@
   "custom-InformationHome": {
     "component": "InformationHome"
   },
-  "custom-CarouselPromo": {
-    "component": "CarouselPromo"
+  "custom-CardItensHome": {
+    "component": "CardItensHome"
   },
   "custom-Countdown":{
     "component": "Countdown"

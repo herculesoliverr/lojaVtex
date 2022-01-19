@@ -25,6 +25,9 @@ const Shelf = () => {
     <div className={styles.containerShelf}>
       {arrayProducts ? (
         <>
+        <div className={styles.containerShelfTitle}>
+          <p className={styles.titleShelf}>PROMOÇÕES</p>
+        </div>
           <SliderLayout
             itemsPerPage={{
               desktop: 4,

@@ -1,0 +1,51 @@
+{
+  "responsive-layout.desktop#home": {
+    "children": [
+      "list-context.image-list#bannerHome"
+    ]
+  },
+
+  "list-context.image-list#bannerHome": {
+    "children": [
+      "slider-layout#bannerHome"
+    ],
+    "props": {
+      "height": 764,
+      "images":[
+        {
+          "image": "assets/img/bannerHome/kids1.jpg",
+          "mobileImage": "",
+          "description": "teste",
+          "link": {"url": ""}
+        },
+        {
+          "image": "assets/img/bannerHome/kids2.jpg",
+          "mobileImage": "",
+          "description": "teste",
+          "link": {"url": ""}
+        }
+      ]
+    }
+  },
+
+  "slider-layout#bannerHome": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "slideTransition": {
+        "speed": 400,
+        "delay": 0,
+        "timing": "5"
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "carouselHome"
+    }
+  }
+  
+}
