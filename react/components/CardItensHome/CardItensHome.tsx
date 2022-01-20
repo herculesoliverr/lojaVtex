@@ -1,45 +1,46 @@
 import React from 'react'
-import styles from './CardItensHome.css'
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import Carousel from 'react-bootstrap/Carousel'
 import kidsFem1 from '../../assets/img/card-itens-home/kidsFem1.jpg'
-// import kidsFem2 from '../../assets/img/card-itens-home/kidsFem2.jpg'
-// import kidsMan1 from '../../assets/img/card-itens-home/kidsMan1.jpg'
+import kidsFem2 from '../../assets/img/card-itens-home/kidsFem2.jpg'
+import kidsMan1 from '../../assets/img/card-itens-home/kidsMan1.jpg'
 import kidsMan2 from '../../assets/img/card-itens-home/kidsMan2.jpg'
-import { ContainerCardItensHome } from './StyleCardItensHome'
+import { ContainerCardItensHome, ContainerCardOne, ContainerCard, TextCard, TextCardOne } from './StyleCardItensHome'
 
 
 function CardItensHome() {
   return (
     <div>
       <ContainerCardItensHome>
-        <div className={styles.containerCardOne}>
-          <h2 className={styles.textCardOne}>O melhor para o seu filho!</h2>
-        </div>
-        <div className={styles.containerCardTwo}>
+        <ContainerCardOne>
+          <TextCardOne >O melhor para o seu filho!</TextCardOne>
+        </ContainerCardOne>
+        <ContainerCard>
           <a href='/'>
-            <img src={kidsFem1}/>
-            <h2>Description 2</h2>
+            <img className='ImageContainer' src={kidsFem1}/>
+            <div className='CoverImage'></div>
+            <TextCard className='TextImageContainer'>Coleção feminina de inverno</TextCard>
           </a> 
-        </div>
-        <div className={styles.containerCardThree}>
+        </ContainerCard>
+        <ContainerCard >
           <a href='/'>
-          <img src={kidsMan2}/>
-            <h2>Description 3</h2>
+            <img className='ImageContainer' src={kidsMan1}/>
+            <div className='CoverImage'></div>
+            <TextCard className='TextImageContainer'>Coleção de rua</TextCard>
           </a> 
-        </div>
-        <div className={styles.containerCardFour}>
+        </ContainerCard>
+        <ContainerCard>
           <a href='/'>
-            <img src={kidsMan2}/>
-            <h2>Description 4</h2>
+            <img className='ImageContainer' src={kidsFem2}/>
+            <div className='CoverImage'></div>
+            <TextCard className='TextImageContainer'>Coleção de outono</TextCard>
           </a> 
-        </div>
-        <div className={styles.containerCardFive}>
+        </ContainerCard>
+        <ContainerCard>
           <a href='/'>
-            <img src={kidsMan2}/>
-            <h2>Description 5</h2>
+            <img className='ImageContainer' src={kidsMan2}/>
+            <div className='CoverImage'></div>
+            <TextCard className='TextImageContainer'>Coleção de verão</TextCard>
           </a> 
-        </div>
+        </ContainerCard>
       </ContainerCardItensHome>
     </div>
   )
