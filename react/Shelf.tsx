@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import ShelfItem from './components/ShelfItem/ShelfItem'
 import { SliderLayout } from 'vtex.slider-layout'
-import styles from '../react/components/ShelfItem/ShelfItem.css'
 //import {useOrderItems} from 'vtex.order-items/OrderItems'
+import { ContainerShelf, ContainerShelfTitle, TitleShelf } from './components/ShelfItem/StyleShelfItem'
 
 
 const Shelf = () => {
@@ -22,12 +22,12 @@ const Shelf = () => {
   }
 
   return (
-    <div className={styles.containerShelf}>
+    <ContainerShelf>
       {arrayProducts ? (
         <>
-        <div className={styles.containerShelfTitle}>
-          <p className={styles.titleShelf}>PROMOÇÕES</p>
-        </div>
+        <ContainerShelfTitle>
+          <TitleShelf>PROMOÇÕES</TitleShelf>
+        </ContainerShelfTitle>
           <SliderLayout
             itemsPerPage={{
               desktop: 4,
@@ -53,7 +53,7 @@ const Shelf = () => {
       ) : (
         ''
       )}
-    </div>
+    </ContainerShelf>
   )
 }
 

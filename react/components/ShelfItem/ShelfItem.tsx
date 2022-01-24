@@ -1,6 +1,6 @@
 import React from 'react'
 import { formatPrice } from '../../helpers/Helper'
-import styles from './ShelfItem.css'
+import { ItemShelf, ShelfLink, ShelfImage__img, ShelfProductName, ShelfPrice, ShelfSellingPrice, ShelfBestPrice, ShelfButtonAddToCart } from './StyleShelfItem'
 
 const ShelfItem = ({
   id,
@@ -12,25 +12,24 @@ const ShelfItem = ({
 }: shelfType) => {
   return (
     <div>
-      <div key={id} className={styles.shelfItem}>
-        <a href={`${linkURL}`} className={styles.shelfLink}>
-        <div className={styles.shelfLink}>
-          <img
+      <ItemShelf key={id}>
+        <ShelfLink href={`${linkURL}`} >
+        <ShelfLink>
+          <ShelfImage__img
             src={`${imageURL}`}
-            alt={`${name}`}
-            className={styles.shelfImage__img}
+            alt={`${name}`}            
           />
-        </div>
-        <h2 className={styles.shelfProductName}>{`${name}`}</h2>
-        </a>
-        <div className={styles.shelfPrice}>
-          <p className={styles.shelfSellingPrice}>
+        </ShelfLink>
+        <ShelfProductName>{`${name}`}</ShelfProductName>
+        </ShelfLink>
+        <ShelfPrice>
+          <ShelfSellingPrice>
             {formatPrice(sellingPrice)}
-          </p>
-          <p className={styles.shelfBestPrice}>{formatPrice(price)}</p>
-        </div>
-        <div className={styles.shelfButtonAddToCart}>ADICIONAR AO CARRINHO</div>
-      </div>
+          </ShelfSellingPrice>
+          <ShelfBestPrice>{formatPrice(price)}</ShelfBestPrice>
+        </ShelfPrice>
+        <ShelfButtonAddToCart>ADICIONAR AO CARRINHO</ShelfButtonAddToCart>
+      </ItemShelf>
     </div>
   )
 }

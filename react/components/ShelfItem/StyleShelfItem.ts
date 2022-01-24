@@ -1,14 +1,17 @@
-/* shelf style */
-.containerShelf {
+import styled from 'styled-components'
+
+/////////////////////////////////////
+// SHELF RAIZ 
+/////////////////////////////////////
+
+export const ContainerShelf = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.shelfItem {
-  margin: 0 5px;
-}
-
-.shelfTitle {
+`
+export const ContainerShelfTitle = styled.div`
+  position: relative;
+`
+export const TitleShelf = styled.p`
   width: auto;
   margin-bottom: 0;
   padding-top: 32px;
@@ -18,20 +21,25 @@
   color: #000;
   font-weight: 800;
   text-transform: uppercase;
-}
+`
 
-.shelfLink {
+
+/////////////////////////////////////
+// SHELF COMPONENT 
+////////////////////////////////////
+
+export const ItemShelf = styled.div`
+  margin: 0 5px;
+`
+export const ShelfLink = styled.a`
   text-decoration: inherit;
-}
-
-.shelfImage__img {
+`
+export const ShelfImage__img = styled.img`
   position: relative;
-  background-color: #f7f7f7;
   max-width: 16em;
   max-height: 16em;
-}
-
-.shelfProductName {
+`
+export const ShelfProductName = styled.h2`
   display: block;
   text-transform: uppercase;
   text-align: center;
@@ -43,33 +51,29 @@
   color: #000;
   line-height: inherit;
   margin-right: 10px;
-}
-
-.shelfPrice {
+`
+export const ShelfPrice = styled.div`
   display: flex;
   margin-right: 10px;
   align-items: center;
   justify-content: center;
-}
-
-.shelfSellingPrice {
+`
+export const ShelfSellingPrice = styled.p`
   margin-top: 0;
   color: #000;
   font-size: 14px;
   font-weight: 400;
   margin-right: 0.5rem;
   text-decoration: line-through;
-}
-
-.shelfBestPrice {
+`
+export const ShelfBestPrice = styled.p`
   margin-top: 2px;
   font-weight: 800;
   color: #000;
   font-size: 16px;
   line-height: 18px;
-}
-
-.shelfButtonAddToCart {
+`
+export const ShelfButtonAddToCart = styled.div`
   text-align: center;
   background: #000;
   color: #fff;
@@ -78,26 +82,4 @@
   max-width: 50%;
   margin: 0 auto;
   cursor: pointer;
-}
-
-.shelfButtonAddToCart {
-  text-align: center;
-  background: #000;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 0;
-  max-width: 50%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.containerShelfTitle{
-  position: relative;
-}
-
-.titleShelf{
-  font-size: 26px;
-  line-height: 14px;
-  text-transform: uppercase;
-  padding-left: 12px;
-}
+`
