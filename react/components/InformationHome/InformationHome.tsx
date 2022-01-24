@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from './InformationHome.css'
 import { FaShippingFast } from 'react-icons/fa';
 import { FaMapMarkedAlt } from 'react-icons/fa';
 import { ImCart } from 'react-icons/im';
-//import { message } from 'antd';
+import {Container, List, ListList, ListText} from './StyleInformationHome'
 
 interface PropsInformationHome {
   message1: string,
@@ -14,19 +13,19 @@ interface PropsInformationHome {
 function InformationHome( {message1, message2, message3} : PropsInformationHome) {
   return (
     <div>
-      <div className={styles.container}>
-        <div className={styles.list}>
-          <div className={styles.listLi}>
-             <a href="" className={styles.listText}><FaShippingFast size={50} spacing={50}/> <br/>{message1}</a>
-          </div>
-          <div className={styles.listLi} >
-            <a href="" className={styles.listText}><FaMapMarkedAlt size={50} className="icons"/> <br/>{message2}</a>
-          </div>
-          <div className={styles.listLi}>
-            <a href="" className={styles.listText}><ImCart size={50} className="icons"/><br/>{message3}</a>
-          </div>
-        </div>
-      </div>
+      <Container>
+        <List>
+          <ListList>
+             <ListText href="" ><FaShippingFast size={50} className="icons"/> <br/>{message1}</ListText>
+          </ListList>
+          <ListList>
+            <ListText href="" ><FaMapMarkedAlt size={50} className="icons"/> <br/>{message2}</ListText>
+          </ListList>
+          <ListList>
+            <ListText href="" ><ImCart size={50} className="icons"/><br/>{message3}</ListText>
+          </ListList>
+        </List>
+      </Container>
     </div>
   )
 }
